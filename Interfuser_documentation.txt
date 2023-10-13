@@ -1,0 +1,23 @@
+InterFuser is a safety-enhanced autonomous driving framework that uses a transformer encoder to fuse information from multi-modal multi-view sensors. 
+It was developed by a team of researchers by training on CARLA simulator and was ranked second on the CARLA Autonomous Driving Leaderboard.
+
+InterFuser is based on the following key ideas:
+
+Multi-modal multi-view sensor fusion: InterFuser fuses information from a variety of cameras, including left, right and center RGB cameras, bounding boxes for dynamic objects, and measurements of the agent itself. This allows InterFuser to develop a comprehensive understanding of the surrounding environment.
+Transformer encoder: InterFuser uses a transformer encoder to fuse information from the different sensors. The transformer encoder is a powerful neural network architecture that has been shown to be effective for a variety of natural language processing tasks. In InterFuser, the transformer encoder is used to learn the relationships between the different sensor inputs and to extract the most important features for autonomous driving.
+Interpretable outputs: InterFuser generates intermediate interpretable features from the transformer encoder. These features provide more semantics and are exploited to better constrain actions to be within the safe sets.
+
+
+Here are some additional details about the InterFuser network:
+
+The InterFuser network consists of two main components: a CNN backbone and a transformer encoder-decoder.
+The CNN backbone is used to extract features from the individual sensor inputs.
+The transformer encoder is used to fuse the features from the CNN backbone and to extract the most important features for autonomous driving.
+The training data consists of pairs of sensor inputs and ground truth labels for the agent's actions.
+
+The InterFuser network can be used to generate the following outputs:
+Object density map: A map of the density of objects in the surrounding environment.
+Waypoints for the ego vehicle: A sequence of waypoints that the ego vehicle should follow to reach its destination.
+Rules to be enforced: A set of rules that the ego vehicle should follow to drive safely.
+The InterFuser network is a complex and powerful neural network architecture. However, it has been shown to be effective at achieving high driving performance in a variety of challenging scenarios. 
+Additionally, InterFuser's interpretable outputs could be used to improve the safety and reliability of autonomous vehicles.

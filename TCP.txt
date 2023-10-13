@@ -1,0 +1,22 @@
+The Trajectory-Guided Control Prediction (TCP) algorithm is a state-of-the-art end-to-end autonomous driving algorithm that was developed for the CARLA simulator and stood at 3rd position on the CARLA Autonomous Driving Leaderboard in 2022.
+
+The TCP algorithm is based on the following key ideas:
+
+* **Trajectory planning and control prediction:** The TCP algorithm combines trajectory planning and control prediction into a single unified framework. This allows the algorithm to generate both a trajectory and a sequence of control actions for the vehicle to follow.
+* **Temporal reasoning:** The TCP algorithm uses temporal reasoning to predict the future state of the vehicle and the surrounding environment. This allows the algorithm to generate a trajectory and control actions that are robust to changes in the environment.
+* **Trajectory guidance:** The TCP algorithm uses a trajectory guidance module to guide the control prediction branch. This allows the control prediction branch to generate control actions that are consistent with the planned trajectory.
+
+The TCP algorithm was trained on a dataset of synthetic data generated from the CARLA simulator. The dataset contains a variety of driving scenarios, including urban driving, highway driving, and night driving. The TCP algorithm was evaluated on the CARLA Autonomous Driving Leaderboard, which consists of a set of challenging driving scenarios. The TCP algorithm achieved a Route Completion score of 86.32, which was the third-highest score on the leaderboard at the time.
+
+The TCP algorithm is a promising new approach to autonomous driving. It has shown to be effective at achieving high driving performance in a variety of challenging scenarios. Additionally, the TCP algorithm is relatively simple to implement and train.
+
+Here are some additional details about the TCP algorithm:
+
+* The TCP algorithm consists of two main components: a trajectory planning branch and a control prediction branch.
+* The trajectory planning branch uses a variety of techniques to generate a trajectory for the vehicle to follow. These techniques include model-based planning, reinforcement learning, and imitation learning.
+* The control prediction branch uses a variety of techniques to predict the future state of the vehicle given the current state of the vehicle, the planned trajectory, and the surrounding environment. These techniques include recurrent neural networks, long short-term memory networks, and gated recurrent units.
+* The trajectory guidance module uses the planned trajectory to guide the control prediction branch. This is done by providing the control prediction branch with a target state for the vehicle to reach at each time step.
+
+The TCP algorithm is trained using a supervised learning approach. The training data consists of pairs of sensor inputs and ground truth labels for the vehicle's actions. The TCP algorithm is trained to predict the vehicle's actions given the sensor inputs and the planned trajectory.
+
+The TCP algorithm is a complex and powerful neural network architecture. However, it has been shown to be effective at achieving high driving performance in a variety of challenging scenarios. Additionally, the TCP algorithm is relatively simple to implement and train.

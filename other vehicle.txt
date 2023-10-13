@@ -1,0 +1,25 @@
+
+InterFuser and TCP use other actors' data for their prediction in the following ways:
+
+InterFuser uses a multi-modal multi-view sensor fusion approach to predict the future state of the vehicle and the surrounding environment. This approach involves fusing data from a variety of sensors, including RGB cameras, depth maps, semantic segmentation maps, bounding boxes for dynamic objects, and measurements of the agent itself. This allows InterFuser to develop a comprehensive understanding of the surrounding environment, including the positions, velocities, and heading angles of other vehicles.
+
+InterFuser and TCP use other actors' data for their prediction in the following ways:
+
+InterFuser uses a multi-modal multi-view sensor fusion approach to predict the future state of the vehicle and the surrounding environment. This approach involves fusing data from a variety of sensors, including RGB cameras, depth maps, semantic segmentation maps, bounding boxes for dynamic objects, and measurements of the agent itself. This allows InterFuser to develop a comprehensive understanding of the surrounding environment, including the positions, velocities, and heading angles of other vehicles.
+
+TCP uses a trajectory guidance module to guide the control prediction branch. The trajectory guidance module provides the control prediction branch with a target state for the vehicle to reach at each time step. This target state is generated based on the planned trajectory and the data from other actors in the environment.
+
+Both InterFuser and TCP use a variety of machine learning techniques to predict the future state of other vehicles in the environment. These techniques include:
+
+Recurrent neural networks (RNNs): RNNs are a type of neural network that are well-suited for modeling sequential data, such as the positions and velocities of other vehicles over time.
+Long short-term memory (LSTM) networks: LSTMs are a type of RNN that are specifically designed to learn long-term dependencies in sequential data.
+Gated recurrent units (GRUs): GRUs are a type of RNN that are similar to LSTMs, but they are more efficient to train and deploy.
+InterFuser and TCP are still under development, but they have shown promising results in simulation and real-world testing. As these algorithms continue to improve, they are likely to play an important role in the development of safe and reliable autonomous vehicles.
+
+Here are some examples of how InterFuser and TCP can use other actors' data for their prediction:
+
+InterFuser can use the positions and velocities of other vehicles to predict their future trajectories. This information can be used to generate a safer trajectory for the ego vehicle to follow.
+TCP can use the data from other vehicles to predict their behavior. This information can be used to generate control actions that are more likely to avoid collisions.
+InterFuser can use the semantic segmentation maps to identify other vehicles in the environment. This information can be used to predict the behavior of other vehicles and to generate a safer trajectory for the ego vehicle to follow.
+TCP can use the bounding boxes for dynamic objects to track the positions and velocities of other vehicles. This information can be used to predict the future trajectories of other vehicles and to generate control actions that are more likely to avoid collisions.
+By using the data from other actors, InterFuser and TCP can develop a more comprehensive understanding of the surrounding environment and make better predictions about the future state of the world. This allows them to generate safer and more efficient trajectories for the ego vehicle to follow.
